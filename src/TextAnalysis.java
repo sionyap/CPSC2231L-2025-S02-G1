@@ -9,6 +9,8 @@ public class TextAnalysis // main class
 
         }
 
+        System.out.println("Hello, World!");
+
     }
 
     public static boolean menu(int option)
