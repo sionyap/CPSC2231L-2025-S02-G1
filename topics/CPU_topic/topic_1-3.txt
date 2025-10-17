@@ -1,0 +1,26 @@
+New chip opens door to AI computing at light speed
+by University of Pennsylvania
+
+ Editors' notes
+Credit: CC0 Public Domain
+University of Pennsylvania engineers have developed a new chip that uses light waves, rather than electricity, to perform the complex math essential to training AI. The chip has the potential to radically accelerate the processing speed of computers while also reducing their energy consumption.
+
+The silicon-photonic (SiPh) chip's design is the first to bring together Benjamin Franklin Medal Laureate and H. Nedwill Ramsey Professor Nader Engheta's pioneering research in manipulating materials at the nanoscale to perform mathematical computations using light—the fastest possible means of communication—with the SiPh platform, which uses silicon, the cheap, abundant element used to mass-produce computer chips.
+
+The interaction of light waves with matter represents one possible avenue for developing computers that supersede the limitations of today's chips, which are essentially based on the same principles as chips from the earliest days of the computing revolution in the 1960s.
+
+In a paper appearing in Nature Photonics, Engheta's group, together with that of Firooz Aflatouni, Associate Professor in Electrical and Systems Engineering, describes the development of the new chip.
+
+"We decided to join forces," says Engheta, leveraging the fact that Aflatouni's research group has pioneered nanoscale silicon devices.
+
+Their goal was to develop a platform for performing what is known as vector-matrix multiplication, a core mathematical operation in the development and function of neural networks, the computer architecture that powers today's AI tools.
+
+Instead of using a silicon wafer of uniform height, explains Engheta, "you make the silicon thinner, say 150 nanometers," but only in specific regions. Those variations in height—without the addition of any other materials—provide a means of controlling the propagation of light through the chip, since the variations in height can be distributed to cause light to scatter in specific patterns, allowing the chip to perform mathematical calculations at the speed of light.
+
+Due to the constraints imposed by the commercial foundry that produced the chips, Aflatouni says, this design is already ready for commercial applications, and could potentially be adapted for use in graphics processing units (GPUs), the demand for which has skyrocketed with the widespread interest in developing new AI systems.
+
+"They can adopt the Silicon Photonics platform as an add-on," says Aflatouni, "and then you could speed up training and classification."
+
+In addition to faster speed and less energy consumption, Engheta and Aflatouni's chip has privacy advantages: Because many computations can happen simultaneously, there will be no need to store sensitive information in a computer's working memory, rendering a future computer powered by such technology virtually unhackable.
+
+"No one can hack into a non-existing memory to access your information," says Aflatouni.

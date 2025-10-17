@@ -1,0 +1,27 @@
+China research on next-generation computer chips is double the US output
+Leading efforts in fields such as optical physics could stymie US export controls designed to stifle the country’s microchip industry.
+
+By Elizabeth Gibney
+
+Cambricon's Cambrian-1 chip uses a computing architecture specially designed for an artificial-intelligence technique known as deep learning.Credit: Institute of Computing Technology, Chinese Academy of Sciences
+
+China is now producing most of the basic research that could underpin future computing hardware, an analysis has found. If that work develops into commercial applications, the United States might soon find it impossible to use export controls to retain its competitive advantage in high-performance microchip design and production, the authors say.
+
+Although the study’s findings do not mean that China is currently leading this field, “arguably, it’s showing us where things are headed”, says Zachary Arnold, a lead analyst at the Emerging Technology Observatory (ETO) at Georgetown University in Washington DC, which performed the analysis.
+
+The study, published on 3 March, finds that between 2018 and 2023, research papers on chip design and fabrication included authors affiliated with Chinese institutions more than twice as often as they did US ones. And it wasn’t just a matter of quantity: China also excelled when it came to highly cited papers. Chinese-affiliated authors co-authored 50% of papers that were in the top 10% most cited for their publication year. That compared with 22% for US-affiliated authors and 17% for those associated with European institutions.
+
+Such research spans a wide range of academic disciplines, and encompasses everything from conventional computer chips and fast graphics-processing units optimized for artificial intelligence (AI) to completely new architectures. To find and collate relevant papers for their study, analysts at the ETO had to train a machine-learning algorithm. Their analysis captures mainly emerging chip technology, rather than commercial advances, which are often incremental and proprietary, says Arnold.
+
+The study included only papers with English-language abstracts; for Chinese-authored papers, these are more likely to be those with international reach. China has been boosting its research output in many fields, Arnold says. “But I don’t know if we’ve seen a field where there is quite this difference,” he adds. “When you see so much activity, it’s hard to imagine that [won’t] have an effect on China’s technological capability and ultimately manufacturing capability in the coming years.”
+
+Academic impact
+The findings chime with what Yunji Chen sees on the ground in China. Chen, who heads up the State Key Laboratory of Processors in Beijing and is a co-founder of Cambricon, a company that designs chips optimized for AI, says that the country’s manufacturing ability lags behind its chip design, partly as a result of US export controls.
+
+Starting in October 2022, the US Department of Commerce began to prohibit the sale to China of certain advanced chips and manufacturing equipment. The US government said it was acting, in part, because China was using AI capabilities to “monitor, track, and surveil their own citizens, and fuel its military modernization”.
+
+But Chinese research is having a major academic impact, Chen says. He adds that his group has racked up more than 10,000 citations on Google Scholar for computing architectures designed for deep learning, and that the biggest proportion of those — 41% — come from the United States.
+
+The ETO team also identified ‘hotspots’ of growth in chip research, including neuromorphic computing — an architecture inspired by the biophysics of neurons — and optical computing, which uses light, rather than electrons, to carry information, and could boost computer efficiency. In terms of volume of papers, “China is leading on both of these specific clusters,” says Arnold.
+
+Both types of speculative technology have potential for use in AI, if they are commercialized, says Jacob Feldgoise, a data research analyst and China specialist at Georgetown’s Center for Security and Emerging Technology, which hosts the ETO. The technologies mainly use mature manufacturing techniques that the United States has no monopoly on, he says. “China is experimenting with a lot of these next-generation technologies, which, if commercialized, would be very difficult for the United States to control,” he adds. “If China is able to commercialize some of this technology, it’s not that they would be catching up, but potentially leap-frogging.”
