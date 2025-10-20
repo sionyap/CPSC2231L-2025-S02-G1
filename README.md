@@ -33,10 +33,10 @@ The project uses an object-oriented architecture with four classes:
 
 | File	| Description |
 |-------|-------------|
-| Main.java	| Entry point of the program. Handles user input and coordinates analysis of articles using a while loop to display a user interface menu. |
-| FileLoader.java	| Loads all text files from a specified directory (topic folder), adding all within one topic to an ArrayList of Strings for `ArticleStats.java` to iterate through and analyze individually. |
-| StopWords.java	| Stores and filters out common English stop words using the `removeStopWords(ArrayList<String> articleWords)` method from the article being iterated through in `ArticleStats.java`. |
-| ArticleStats.java |	Through the main method, processes given text to calculate article statistics and, using `sortByRank(ArrayList<String> words, ArrayList<Integer> wordCounts)`, generate ranked word frequencies by aligning words to their frequencies across ArrayLists `words` and `wordCounts`. |
+| Main.java	| Entry point of the program. Handles user input and coordinates analysis of articles using a while loop to display a user interface menu. (Currently incomplete --- focus was on functionality between `ArticleStats.java` and other classes.) |
+| FileLoader.java	| Loads all text files from a specified directory (topic folder) by adding all .txt files within one topic to an ArrayList of Strings for `ArticleStats.java` to iterate through and analyze individually. |
+| StopWords.java	| Stores (via a predetermined stopwords.txt file) and filters out common English stop words using the `removeStopWords(ArrayList<String> articleWords)` method (creates the ArrayList of stop words, using an `Itorator`) from the article being iterated through in `ArticleStats.java`. |
+| ArticleStats.java |	Through the main method, first iterates into a new text file, reading it line by line, and concatenating each line to create a large string consisting of all article text; assigns words in the article into an a `wordArray` using a delimiter and converting this Array into an ArrayList for comparison. Then, processes given text via `FileLoader.java` to calculate article statistics (storing unique words, their counts, and overall word count in respective ArrayLists) and, using `sortByRank(ArrayList<String> words, ArrayList<Integer> wordCounts)`, generate ranked word frequencies by aligning words to their frequencies across ArrayLists `words` and `wordCounts`, displaying (printing) them side by side in order of occurrences. |
 
 ## ⚙️ How to Run
 
