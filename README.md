@@ -58,7 +58,8 @@ The program will:
 - Display word counts, unique word counts, and top frequent words.
 
 ## 🧮 Example Output
-![Sample output of "CPU" topic.](<img width="1612" height="936" alt="Screenshot 2025-10-20 164737" src="https://github.com/user-attachments/assets/8e885495-0704-4379-8b73-8a406ba7e15e" />)
+![Sample output of "CPU" topic.](<img width="1612" height="936" alt="Screenshot 2025-10-20 164737" src="https://github.com/user-attachments/assets/87170bb4-8ea5-4afc-9f90-6168ed02bbb1" />
+)
 
 ## 👥 Group Members
 
