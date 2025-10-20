@@ -58,15 +58,7 @@ The program will:
 - Display word counts, unique word counts, and top frequent words.
 
 ## 🧮 Example Output
-Analyzing topic: Electric Cars\
-Total Words: 3256\
-Unique Words: 972\
-Top 10 Most Frequent Words:
-1. car - 124
-2. battery - 98
-3. electric - 87
-4. model - 75
-5. ...
+![Sample output of "CPU" topic.](<img width="1574" height="935" alt="image" src="https://github.com/user-attachments/assets/7c4188e3-a3a7-4787-827a-bad53621c80a" />)
 
 ## 👥 Group Members
 
