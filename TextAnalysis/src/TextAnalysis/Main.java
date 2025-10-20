@@ -1,9 +1,6 @@
 public class Main // main class
 {
-    private String article1;
-    private String article2;
-    private String article3;
-
+    
     public Main()
     {
 
@@ -27,3 +24,4 @@ public class Main // main class
     }
 
 }
+
