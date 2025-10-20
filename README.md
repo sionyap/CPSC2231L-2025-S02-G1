@@ -12,7 +12,8 @@ Institution: Fairfield University, School of Engineering and Computing
 2. [Project Structure](https://github.com/sionyap/CPSC2231L-2025-S02-G1#project-structure)
 3. [How to Run](https://github.com/sionyap/CPSC2231L-2025-S02-G1#how-to-run)
 4. [Example Output](https://github.com/sionyap/CPSC2231L-2025-S02-G1#example-output)
-5. [Group Members](https://github.com/sionyap/CPSC2231L-2025-S02-G1#group-members)
+5. [UML Diagram](https://github.com/sionyap/CPSC2231L-2025-S02-G1#uml-diagram)
+6. [Group Members](https://github.com/sionyap/CPSC2231L-2025-S02-G1#group-members)
 
 ## 📘 Overview
 
@@ -60,6 +61,9 @@ The program will:
 
 ## 🧮 Example Output
 ![Sample output of "CPU" topic.](/assets/Milestone1_sample.png)
+
+## UML Diagram
+![UML Diagram, Milestone 1.](/assets/UML_M1.png)
 
 ## 👥 Group Members
 
