@@ -1,9 +1,10 @@
 # CPSC2231L: Text Analysis Project
-Last edit: 20 Oct 2025\
-Text Analysis Project – Milestone 1
 
-Course: CPSC 2231L – Programming Workshop Lab\
-Semester: Fall 2025\
+Last edit: 20 Oct 2025
+Milestone 1 – Text Analysis Tool
+
+Course: CPSC 2231L – Programming Workshop Lab
+Semester: Fall 2025
 Institution: Fairfield University, School of Engineering and Computing
 
 # Table of Contents
@@ -64,6 +65,6 @@ The program will:
 
 Nolan: Implemented FileLoader.java
 
-Kevin: Implemented StopWords.java
+Kevin: Implemented StopWords.java & Read Me
 
-Sion: Implemented ArticleStats.java and Main.java integration
+Sion: Implemented ArticleStats.java and Main.java integration & UML Diagram
