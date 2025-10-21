@@ -69,6 +69,6 @@ The program will:
 
 Nolan: Implemented FileLoader.java
 
-Kevin: Implemented StopWords.java & Read Me
+Kevin: Implemented StopWords.java & README.md
 
 Sion: Implemented ArticleStats.java and Main.java integration & UML Diagram
