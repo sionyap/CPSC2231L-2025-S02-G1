@@ -1,10 +1,10 @@
 # CPSC2231L: Text Analysis Project
 
-Last edit: 20 Oct 2025
+Last edit: 10 November 2025 7:31 AM
 Milestone 1 – Text Analysis Tool
 
-Course: CPSC 2231L – Programming Workshop Lab
-Semester: Fall 2025
+Course: CPSC 2231L – Programming Workshop Lab\
+Semester: Fall 2025\
 Institution: Fairfield University, School of Engineering and Computing
 
 # Table of Contents
