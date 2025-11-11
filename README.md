@@ -42,13 +42,13 @@ The project uses an object-oriented architecture with seven classes:
 | SentimentAnalysis.java |	. |
 | ApiFetcher.java	| . |
 | ResourceManager.java	| . |
-| AppController.java	| Manage the program flow from start to finish. 
-Uses the ApiFetcher to pull the articles from the API.
-Uses the TextProcessor to remove stop words from the article text.
-Load lexicon scores and words associated via ResourceManager.
-Calls SentimentAnalysis.java methods to compute:
-** Simple sentiment score
-** Lexicon-weighted score |
+| AppController.java	| - Manage the program flow from start to finish. 
+|| - Uses the ApiFetcher to pull the articles from the API.
+|| - Uses the TextProcessor to remove stop words from the article text.
+|| - Load lexicon scores and words associated via ResourceManager.
+|| - Calls SentimentAnalysis.java methods to compute:
+|| -- Simple sentiment score
+|| -- Lexicon-weighted score |
 
 ## ⚙️ How to Run
 
