@@ -19,56 +19,52 @@ Institution: Fairfield University, School of Engineering and Computing
 
 This project is part of the semester-long software development assignment for CPSC 2231L.
 The goal of Milestone 1 is to build the foundation for a text analysis tool that preprocesses and analyzes multiple text articles about the same topic.
+The goal of Milestone 2 is to create a sentiment analysis; with these articles, the program is able to indicate generally whether they are positive, negative, or neutral.
+Additionally, an API call was implemented to gather articles from the Internet rather than prompting users to choose a topic or upload a particular file.
 
 The program currently performs the following:
 
-- Loads multiple text files (articles) from a folder.
+- Loads multiple text files (articles) from an API call.
 - Removes stop words (common words like “and”, “the”, “but”, etc.).
 - Calculates basic text statistics (total words, unique words, word frequency).
 - Ranks words by their frequency of occurrence.
-
-All preprocessing is done for one topic (folder) at a time.
+- Analyzes sentiment of the article (positive, negative, neutral) based on scoring of words' neutrality.
 
 ## 🧱 Project Structure
 
-The project uses an object-oriented architecture with four classes:
+The project uses an object-oriented architecture with seven classes:
 
 | File	| Description |
 |-------|-------------|
-| Main.java	| Entry point of the program. Handles user input and coordinates analysis of articles using a while loop to display a user interface menu. (Currently incomplete --- focus was on functionality between `ArticleStats.java` and other classes.) |
-| FileLoader.java	| Loads all text files from a specified directory (topic folder) by adding all .txt files within one topic to an ArrayList of Strings for `ArticleStats.java` to iterate through and analyze individually. |
-| StopWords.java	| Stores (via a predetermined stopwords.txt file) and filters out common English stop words using the `removeStopWords(ArrayList<String> articleWords)` method (creates the ArrayList of stop words, using an `Itorator`) from the article being iterated through in `ArticleStats.java`. |
-| ArticleStats.java |	Through the main method, first iterates into a new text file, reading it line by line, and concatenating each line to create a large string consisting of all article text; assigns words in the article into an a `wordArray` using a delimiter and converting this Array into an ArrayList for comparison. Then, processes given text via `FileLoader.java` to calculate article statistics (storing unique words, their counts, and overall word count in respective ArrayLists) and, using `sortByRank(ArrayList<String> words, ArrayList<Integer> wordCounts)`, generate ranked word frequencies by aligning words to their frequencies across ArrayLists `words` and `wordCounts`, displaying (printing) them side by side in order of occurrences. |
+| Main.java	| Entry point of the program; calls the method (from `AppController.java`) that runs sentiment analysis. |
+| LexiconLoader.java	| . |
+| TextProcessor.java	| . |
+| SentimentAnalysis.java |	. |
+| ApiFetcher.java	| . |
+| ResourceManager.java	| . |
+| AppController.java	| . |
 
 ## ⚙️ How to Run
 
-Place your article .txt files in a folder (one topic per folder).
-
-Ensure the folder path is correctly referenced in Main.java.
-
-Compile all Java files (as applicable):
-
-```javac Main.java FileLoader.java StopWords.java ArticleStats.java```
-
-Run the program:
+Run the program within an IDE:
 
 ```java Main.java```
 
 The program will:
-- Read all text files from the specified directory.
+- Choose articles through the API call.
 - Remove stop words.
-- Display word counts, unique word counts, and top frequent words.
+- Display word counts, unique word counts, top frequent words, and whether the article was positive, negative, or neutral (with its scoring breakdown).
 
 ## 🧮 Example Output
-![Sample output of refactored code for Milestone 2, involving an API call.](/assets/Milestone1_sample.png)
+![Sample output of refactored code for Milestone 2, involving an API call.](/assets/sample_M2.png)
 
 ## UML Diagram
 ![UML Diagram, Milestone 2.](/assets/UML_M2.png)
 
 ## 👥 Group Members
 
-Nolan: Implemented FileLoader.java
+Nolan: Implemented ApiFetcher.java, AppController.java, ResourceManager.java
 
-Kevin: Implemented StopWords.java & README.md
+Kevin: Implemented LexiconLoader.java, SentimentAnalysis.java, UML diagram, README
 
-Sion: Implemented ArticleStats.java and Main.java integration & UML Diagram
+Sion: Implemented TextProcessor.java, Main.java, UML diagram (remainder), README (remainder)
