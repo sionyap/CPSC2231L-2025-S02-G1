@@ -1,7 +1,7 @@
 # CPSC2231L: Text Analysis Project
 
-Last edit: 10 November 2025 7:41 PM\
-Milestone 1 – Text Analysis Tool
+Last edit: 10 November 2025 9:24 PM\
+Milestone 1-2 – Text Analysis Tool
 
 Course: CPSC 2231L – Programming Workshop Lab\
 Semester: Fall 2025\
@@ -63,7 +63,7 @@ The program will:
 ![Sample output of refactored code for Milestone 2, involving an API call.](/assets/Milestone1_sample.png)
 
 ## UML Diagram
-![UML Diagram, Milestone 1.](/assets/UML_M1.png)
+![UML Diagram, Milestone 2.](/assets/UML_M2.png)
 
 ## 👥 Group Members
 
