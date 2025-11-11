@@ -38,17 +38,11 @@ The project uses an object-oriented architecture with seven classes:
 |-------|-------------|
 | Main.java	| Entry point of the program; calls the method (from `AppController.java`) that runs sentiment analysis. |
 | LexiconLoader.java	| NO LONGER USED, LARGELY REPLACED BY THE ResourceManager class |
-| TextProcessor.java	| . |
-| SentimentAnalysis.java |	. |
-| ApiFetcher.java	| . |
-| ResourceManager.java	| . |
-| AppController.java	| - Manage the program flow from start to finish. 
-|| - Uses the ApiFetcher to pull the articles from the API.
-|| - Uses the TextProcessor to remove stop words from the article text.
-|| - Load lexicon scores and words associated via ResourceManager.
-|| - Calls SentimentAnalysis.java methods to compute:
-|| -- Simple sentiment score
-|| -- Lexicon-weighted score |
+| TextProcessor.java	| Purpose:<br/>- Removes Stop words. |
+| SentimentAnalysis.java | Purpose:<br/>Calculates the Articles Sentiment through the Lexicon scoring sentiment.<br/>Score counts:<br/>- +1 for positive words<br/>- –1 for negative words<br/>Lexicon-Weighted Scoring<br/>It uses values from a the HashMap of Lexicon Scores loaded from the ResourceManager class. |
+| ApiFetcher.java	| Purpose: <br/>Responsible for retrieving article data from the API and converting it into program-usable objects. <br/>- Connects to the API output, limited to 10 articles to avoid massive output, also bounded by the APIs overflow of 150 artices.<br/>- Reads JSON input.<br/>- Extracts fields from the API: <br/>-- Title<br/>-- Author<br/>-- Description<br/>-- Content<br/>Combines them to form a complete article text, in APIArcticle Class.<br/>- Includes:<br/>-- An internal Article class storing:<br/>--- Title<br/>--- Description<br/>--- Content<br/>a method fullText() returning the title, content, and description of the respective article. |
+| ResourceManager.java	| Purpose:<br/>To load in the external text files in the AdditionalFiles folder:<br/>- Stopwords.txt <br/>- Lexicon_Scores.txt<br/>- negative-words.txt<br/>- positive-words.txt <br/>The Class Loads stop word, positive word, and negative word lists into HashSets<br/>- Loads lexicon scores into a HashMap<br/>Provides getters to retrieve the values in the HashSets and HasMap:<br/>- getStopWords()<br/>- getPositiveWords()<br/>- getNegativeWords() <br/>- getLexiconScores()<br/> This class manaully loads the contents of the external text files to avoid manual path reliance for the rest of the project. |
+| AppController.java	| - Manage the program flow from start to finish. <br/> - Uses the ApiFetcher to pull the articles from the API. <br/> - Uses the TextProcessor to remove stop words from the article text.<br/> - Load lexicon scores and words associated via ResourceManager.<br/> - Calls SentimentAnalysis.java methods to compute:<br/> -- Simple sentiment score<br/> -- Lexicon-weighted score |
 
 ## ⚙️ How to Run
 
