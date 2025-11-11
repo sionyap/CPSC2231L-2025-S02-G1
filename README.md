@@ -17,10 +17,10 @@ Institution: Fairfield University, School of Engineering and Computing
 
 ## 📘 Overview
 
-This project is part of the semester-long software development assignment for CPSC 2231L.
-The goal of Milestone 1 is to build the foundation for a text analysis tool that preprocesses and analyzes multiple text articles about the same topic.
-The goal of Milestone 2 is to create a sentiment analysis; with these articles, the program is able to indicate generally whether they are positive, negative, or neutral.
-Additionally, an API call was implemented to gather articles from the Internet rather than prompting users to choose a topic or upload a particular file.
+This project is part of the semester-long software development assignment for CPSC 2231L.\
+The goal of Milestone 1 is to build the foundation for a text analysis tool that preprocesses and analyzes multiple text articles about the same topic.\
+The goal of Milestone 2 is to create a sentiment analysis; with these articles, the program is able to indicate generally whether they are positive, negative, or neutral.\
+Additionally, an API call was implemented to gather articles from the Internet rather than prompting users to choose a topic or upload a particular file.\
 
 The program currently performs the following:
 
