@@ -14,10 +14,10 @@ public class ResourceManager {
 
     public ResourceManager() throws IOException {
 
-        positive = loadSet("C:\\Users\\NJP20\\OneDrive\\Desktop\\Classes\\Programming Workshop Lab\\TextAnalysisFinalProject\\src\\TextAnalysis\\AdditionalFiles\\positive-words (1).txt");
-        negative = loadSet("C:\\Users\\NJP20\\OneDrive\\Desktop\\Classes\\Programming Workshop Lab\\TextAnalysisFinalProject\\src\\TextAnalysis\\AdditionalFiles\\negative-words (1).txt");
-        stopwords = loadSet("C:\\Users\\NJP20\\OneDrive\\Desktop\\Classes\\Programming Workshop Lab\\TextAnalysisFinalProject\\src\\TextAnalysis\\AdditionalFiles\\stopwords (1).txt");
-        lexicon = loadLexicon("C:\\Users\\NJP20\\OneDrive\\Desktop\\Classes\\Programming Workshop Lab\\TextAnalysisFinalProject\\src\\TextAnalysis\\AdditionalFiles\\lexicon_scores (1).txt");
+        positive = loadSet("C:\\Users\\NJP20\\OneDrive\\Desktop\\Classes\\Programming Workshop Lab\\ArticleAnalysisProject\\src\\TextAnalysis\\AdditionalFiles\\positive-words (1).txt");
+        negative = loadSet("C:\\Users\\NJP20\\OneDrive\\Desktop\\Classes\\Programming Workshop Lab\\ArticleAnalysisProject\\src\\TextAnalysis\\AdditionalFiles\\negative-words (1).txt");
+        stopwords = loadSet("C:\\Users\\NJP20\\OneDrive\\Desktop\\Classes\\Programming Workshop Lab\\ArticleAnalysisProject\\src\\TextAnalysis\\AdditionalFiles\\stopwords (1).txt");
+        lexicon = loadLexicon("C:\\Users\\NJP20\\OneDrive\\Desktop\\Classes\\Programming Workshop Lab\\ArticleAnalysisProject\\src\\TextAnalysis\\AdditionalFiles\\lexicon_scores (1).txt");
     }
 
     private HashSet<String> loadSet(String path) throws IOException {
