@@ -46,7 +46,7 @@ The project uses an object-oriented architecture with seven classes:
 
 ## ⚙️ How to Run
 
-Run the program within an IDE:
+Run the program [from the TextAnalysis_v2 folder] within an IDE:
 
 ```java Main.java```
 
