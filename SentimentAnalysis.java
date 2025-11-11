@@ -1,61 +1,43 @@
-// SentimentAnalysis.java
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
+package TextAnalysis;
+
+import java.util.*;
 
 public class SentimentAnalysis {
 
-    private final HashSet<String> positiveWords;
-    private final  HashSet<String> negativeWords;
-    private final HashMap<String, Double> scoredLexicon;
+    private HashSet<String> positive;
+    private HashSet<String> negative;
+    private HashMap<String, Double> lexicon;
 
-    public SentimentAnalysis(
-        HashSet<String> posWords, 
-        HashSet<String> negWords, 
-        HashMap<String, Double> scoredLex) {
-        
-        this.positiveWords = posWords;
-        this.negativeWords = negWords;
-        this.scoredLexicon = scoredLex;
+    public SentimentAnalysis(HashSet<String> positive,
+                             HashSet<String> negative,
+                             HashMap<String, Double> lexicon) {
+
+        this.positive = positive;
+        this.negative = negative;
+        this.lexicon = lexicon;
     }
 
-    public double analyzeScoredSentiment(ArrayList<String> words) {
-        double totalScore = 0.0;
-        int scoredWordsCount = 0;
-
-        for (String word : words) {
-            if (scoredLexicon.containsKey(word)) {
-                totalScore += scoredLexicon.get(word);
-                scoredWordsCount++;
-            }
+    public int simple(ArrayList<String> words) {
+        int score = 0;
+        for (String w : words) {
+            if (positive.contains(w)) score++;
+            if (negative.contains(w)) score--;
         }
-        
-        if (scoredWordsCount == 0) {
-            return 0.0; 
-        }
-        
-        return totalScore / scoredWordsCount;
+        return score;
     }
 
-    public String analyzeSimpleSentiment(ArrayList<String> words) {
-        int posCount = 0;
-        int negCount = 0;
+    public double scoredAvg(ArrayList<String> words) {
 
-        for (String word : words) {
-            if (positiveWords.contains(word)) {
-                posCount++;
-            } else if (negativeWords.contains(word)) {
-                negCount++;
+        double total = 0;
+        int count = 0;
+
+        for (String w : words) {
+            if (lexicon.containsKey(w)) {
+                total += lexicon.get(w);
+                count++;
             }
         }
 
-        String netSentiment = (posCount > negCount) 
-            ? "Positive" 
-            : ((negCount > posCount) ? "Negative" : "Neutral");
-
-        return String.format(
-            "Positive Word Count: %d, Negative Word Count: %d, Net Sentiment: %s", 
-            posCount, negCount, netSentiment
-        );
+        return (count == 0) ? 0 : total / count;
     }
 }

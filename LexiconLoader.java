@@ -1,48 +1,40 @@
-// LexiconLoader.java
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Scanner;
+
+package TextAnalysis;
+import java.io.*;
+import java.util.*;
 
 public class LexiconLoader {
 
-    public static HashSet<String> loadSimpleLexicon(String lexiconContent) {
-        HashSet<String> lexicon = new HashSet<>();
+    public static HashSet<String> loadList(File f) throws Exception {
+        HashSet<String> set = new HashSet<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(f))) {
+            String line;
 
-        String contentLower = lexiconContent.toLowerCase();
-        try (Scanner contentScanner = new Scanner(contentLower)) {
-        
-            while (contentScanner.hasNextLine()) {
-                String line = contentScanner.nextLine().trim();
-
-                if (!line.isEmpty() && !line.startsWith(";")) {
-                    lexicon.add(line);
-                }
+            while ((line = br.readLine()) != null) {
+                line = line.trim().toLowerCase();
+                if (!line.isEmpty())
+                    set.add(line);
             }
         }
-        return lexicon;
+        return set;
     }
+    public static HashMap<String,Double> loadScored(File f) throws Exception {
+        HashMap<String,Double> map = new HashMap<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(f))) {
+            String line;
 
-    public static HashMap<String, Double> loadScoredLexicon(String lexiconContent) {
-        HashMap<String, Double> lexicon = new HashMap<>();
-        String contentLower = lexiconContent.toLowerCase();
-        try (Scanner contentScanner = new Scanner(contentLower)) {
-        
-            while (contentScanner.hasNextLine()) {
-                String line = contentScanner.nextLine().trim();
-                if (!line.isEmpty()) {
+            while ((line = br.readLine()) != null) {
+                line = line.trim();
+                if (line.isEmpty()) continue;
 
-                    String[] parts = line.split("[\\s\\t]+"); 
-                    if (parts.length == 2) {
-                        try {
-                            String word = parts[0];
-                            double score = Double.parseDouble(parts[1]); 
-                            lexicon.put(word, score);
-                        } catch (NumberFormatException e) {
-                        }
-                    }
+                String[] parts = line.split("\\s+");
+                if (parts.length >= 2) {
+                    try {
+                        map.put(parts[0].toLowerCase(), Double.valueOf(parts[1]));
+                    } catch (NumberFormatException e) {}
                 }
             }
         }
-        return lexicon;
+        return map;
     }
 }
