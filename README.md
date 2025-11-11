@@ -1,6 +1,6 @@
 # CPSC2231L: Text Analysis Project
 
-Last edit: 10 November 2025 7:31 AM
+Last edit: 10 November 2025 7:41 PM\
 Milestone 1 – Text Analysis Tool
 
 Course: CPSC 2231L – Programming Workshop Lab\
@@ -60,7 +60,7 @@ The program will:
 - Display word counts, unique word counts, and top frequent words.
 
 ## 🧮 Example Output
-![Sample output of "CPU" topic.](/assets/Milestone1_sample.png)
+![Sample output of refactored code for Milestone 2, involving an API call.](/assets/Milestone1_sample.png)
 
 ## UML Diagram
 ![UML Diagram, Milestone 1.](/assets/UML_M1.png)
