@@ -1,7 +1,36 @@
 # CPSC2231L: Text Analysis Project
 
-Last edit: 10 November 2025 7:31 AM
-Milestone 1 – Text Analysis Tool
+# Milestone 2 – Sentiment Analysis Tool
+Robust Text Analysis – Milestone 2
+Programming Workshop Project
+This repository contains the full implementation for Milestone 2 of the Programming Workshop course project.
+
+## Key Changes from Milestone 1
+API Integration - The addition of API
+Uses top-headlines section from NewsAPI.org.
+Randomizes article selection to avoid repeated identical results. - Which was an earlier issue
+
+## Sentiment Analysis
+Uses a lexicon-based scoring system:
+Each positive word → +1 (list from positive-words.txt, scores on the lexicon-score.txt)
+Each negative word → -1 (list from negative-words.txt, scores on the lexicon-score.txt)
+Words not included in either list have no overall effect of the Lexicon score calculation.
+
+## Running Instructions
+Download the "ArticleAnalysisProject" file folder, including the "AdditionalFiles" folder(contains the text files)
+Simply run from the main, which calls the APPController, generating articles from the API Fetcher, and produces the information, printing it to the screen. 
+
+
+## Milestone 2 Contributions
+
+Nolan: Implemented APIFetcher.java & LexiconLoader.java files
+
+Kevin: Implemented AppController.java, SentimentAnalysis.java, & UML Diagram
+
+Sion: Implemented Main.Java, ResourceManager.Java, TextProcessor.java, & ReadMe.md
+
+
+# Milestone 1 – Text Analysis Tool
 
 Course: CPSC 2231L – Programming Workshop Lab\
 Semester: Fall 2025\
